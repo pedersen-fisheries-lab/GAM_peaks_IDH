@@ -677,10 +677,12 @@
     
 # 3 Gam Peak Quantification analysis ####
     #Importing peak quantification results 
+      quant_CI_summary <- read.csv("data/simulation/quant_CI_summary_results.csv")
+      quant_n_CI <- read.csv("data/simulation/quant_n_CI_results.csv")
+      
+#### peaks_results File too large to upload to GIT, please skip to quant_Sample_results ####
     peaks_results <- read.csv("data/simulation/quant_peaks_results.csv")
-    quant_CI_summary <- read.csv("data/simulation/quant_CI_summary_results.csv")
-    quant_n_CI <- read.csv("data/simulation/quant_n_CI_results.csv")
-    
+      
     #Importing raw simulation data in case not done before
     sim_data <- read.csv("data/simulation/CLEAN_simulationData.csv")
     
@@ -740,6 +742,12 @@
 
       #adding per-sample number of CI
       quant_Sample_results <- merge(true_peaks_within_CI, quant_n_CI, by="sampleID")
+      write.csv(quant_Sample_results, "data/simulation/quant_Sample_results.csv",row.names = FALSE)
+      
+      
+  #### Skip to here to avoid code blocks using peaks_results####
+      quant_Sample_results <-  read.csv("data/simulation/quant_Sample_results.csv")
+      
       
       #adding per-sample number fo peak sand troughs
       quant_n_PorT <- quant_CI_summary%>%
