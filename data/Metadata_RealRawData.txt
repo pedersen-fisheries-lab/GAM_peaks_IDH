@@ -1,0 +1,132 @@
+Metadata for data files in the ~/data folder 
+Dupont, Natalie, 2022-11-03
+For BIOL 490 research project with Dr. Eric Pedersen
+Datasets produced using web plot Digitizer (Rohatgi 2022), https://apps.automeris.io/wpd/
+------------------------------------------------------------------------------------------------------------------------
+Format
+
+csv file name: name of the csv file
+author(s): last name of all authors
+title: publication title
+publication date: date of publication in yyyy-mm-dd or yyyy-mm format
+journal: name of the publishing journal
+Figure origin: Figure in the article used to digitize the data
+variables (units): list of the variable codes, their description and the units
+Comments: any extra comments about study design, data structure/type, etc
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Collins1995_Fig3b
+author(s): Collins, Glenn, Gibson
+title: Experimental Analysis of Intermediate Disturbance and Initial Floristic Composition: Decoupling Cause and Effect
+publication date: 1995
+journal: Ecology
+Figure origin: Figure 3b
+variables (units): y_pb- years since burn (years), n_sp - species richness (number of species)
+comments: all variables are integers, round to meet this criteria
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Nilsson1987_Fig2a
+author(s): Nilsson
+title: Distribution of Stream-Edge Vegetation Along a Gradient of Current Velocity
+publication date: 1987-06
+journal: Journal of Ecology
+Figure origin: Figure 2 a
+variables (units): vel_m_s- current velocity (m per s), num_spp- number of species present, substrata- substrate type
+comments: num_spp is integer data
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Hiura1995_Fig1
+author(s): Hiura
+title: Gap formation and species diversity in Japanese beech forests: a test of the intermediate disturbance hypothesis on a geographic scale
+publication date: 1995-11-01
+journal: Oecologia
+Figure origin: Figure 1
+variables (units): ln_MWI- natural log-transformed mean windstorm interval (ln(years)), H_prime-shannon diversity index, standID- standID number (factor variable)
+comments:
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: WilsonKeddy1988_Fig2
+author(s): Wilson, Keddy
+title: Species Richness, Survivorship, and Biomass Accumulation along an Environmental Gradient
+publication date: 1988-11
+journal: Oikos
+Figure origin: Figure 2
+variables (units): somc_perc- soil organic matter content (in percent), n_sp- species richness
+Comments: Species richness is integer data. Soil organic content is a proxy for exposure to wave action
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: HalpernSpies1995_Fig1d_w1
+author(s): Halpern, Spies
+title: Plant Species Diversity in Natural and Managed Forests of the Pacific Northwest
+publication date: 1995-11
+journal: Ecological Applications
+Figure origin: Figure 1 d, black dots (watershed 1)
+variables (units): t_disturbance- time since logging disturbance (years), heterogeneity- species heterogeneity-the reciprocal of the Simpson index (number of species of equal abundance necessary to give the same level of diversity)
+Comments: Time since disturbance is integer data
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name:HalpernSpies1995_Fig1d_w2
+author(s): Halpern, Spies
+title: Plant Species Diversity in Natural and Managed Forests of the Pacific Northwest
+publication date: 1995-11
+journal: Ecological Applications
+Figure origin: Figure 1 d, white dots (watershed 3)
+variables (units): t_disturbance- time since logging disturbance (years), heterogeneity- species heterogeneity-the reciprocal of the Simpson index (number of species of equal abundance necessary to give the same level of diversity)
+Comments: Time since disturbance is integer data
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Marra2014_Fig4c
+author(s): Marra, Chambers, Higuchi, Trumbore, Ribeiro, dos Santos, Negrón-Juárez, Reu, Wirth
+title: Large-Scale Wind Disturbances Promote Tree Diversity in a Central Amazon Forest
+publication date: August 2014
+journal: PLOS One
+Figure origin: Figure 4 c
+variables (units): mort_mean- mean mortality of trees of a subplot (mortality in the area surrounding the sub-plot)(%)(caused by wind disturbance), sp_rarefaction- vegetation species rarefaction (expected richness under infinite sampling)
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Lazarina2019_Fig3a_f
+author(s): Lazarina, Devalez, Neokosmidis, Sgardelis, Kallimanis, Tscheulin, Tsalkatis, Kourtidou, Mizerakis, Nakas, Palaiologou, Kalabokidis, Vujic, Petanidou
+title: Moderate fire severity is best for the diversity of most of the pollinator guilds in Mediterranean pine forests
+publication date: 2019-03
+journal: Ecology
+Figure origin: Fig. 3 plots a-f
+variables (units): fire_severity (fire severity measured as prefire normalized burn ratio after 2011 forest fire), abundance: species abundance in partial residuals
+Comments: Used gams, but only partial effects plots are shown
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Lazarina2019_Fig2a
+author(s): Lazarina, Devalez, Neokosmidis, Sgardelis, Kallimanis, Tscheulin, Tsalkatis, Kourtidou, Mizerakis, Nakas, Palaiologou, Kalabokidis, Vujic, Petanidou
+title: Moderate fire severity is best for the diversity of most of the pollinator guilds in Mediterranean pine forests
+publication date: 2019-03
+journal: Ecology
+Figure origin: Fig. 2 plots a
+variables (units): fire_severity (fire severity measured as prefire normalized burn ratio after 2011 forest fire at 250 m radius), richness: species richness of in partial residuals
+Comments: Poisson error distribution initially for species richness
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Lazarina2019_Fig2b
+author(s): Lazarina, Devalez, Neokosmidis, Sgardelis, Kallimanis, Tscheulin, Tsalkatis, Kourtidou, Mizerakis, Nakas, Palaiologou, Kalabokidis, Vujic, Petanidou
+title: Moderate fire severity is best for the diversity of most of the pollinator guilds in Mediterranean pine forests
+publication date: 2019-03
+journal: Ecology
+Figure origin: Fig. 2 plots b
+variables (units): fire_severity (fire severity measured as prefire normalized burn ratio after 2011 forest fire at 250 m radius), expShannon: effective number of species (exponent of Shannon index) in partial residuals
+Comments: gaussian error list for exponent of Shannon index
+
+------------------------------------------------------------------------------------------------------------------------
+csv file name: Keddy1983_Fig4
+author(s): Keddy
+title: Shoreline Vegetation in Axe Lake, Ontario: Effects of Exposure on Zonation Patternsanean pine forests
+publication date: 1983-04
+journal: Ecology
+Figure origin: Figure 4, total richness (black dots)
+variables (units): exp (exposure to wave action along a shore, calculated from wind speed, direction and duration measures), n_spp (species richness)
+Comments: species richness is integer data
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
