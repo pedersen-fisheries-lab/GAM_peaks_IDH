@@ -744,11 +744,7 @@
       quant_Sample_results <- merge(true_peaks_within_CI, quant_n_CI, by="sampleID")
       write.csv(quant_Sample_results, "data/simulation/quant_Sample_results.csv",row.names = FALSE)
       
-      
-  #### Skip to here to avoid code blocks using peaks_results####
-      quant_Sample_results <-  read.csv("data/simulation/quant_Sample_results.csv")
-      
-      
+
       #adding per-sample number fo peak sand troughs
       quant_n_PorT <- quant_CI_summary%>%
         group_by(sampleID)%>%
@@ -778,6 +774,9 @@
       
       quant_Sample_results <- merge(quant_Sample_results, total_CI_width[,c(1, 2)], by="sampleID", all=TRUE)
 
+      #### Skip to here to avoid code blocks using peaks_results####
+      quant_Sample_results <-  read.csv("data/simulation/quant_Sample_results.csv")
+      
       
     #Summary of number of CIs
       quant_Sample_results%>%
